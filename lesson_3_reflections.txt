@@ -1,1 +1,23 @@
 When would you want to use a remote repository rather than keeping all your work local?
+
+This would be ideal for situations where multiple people are working on the project, or you are working from multiple locations. Leveraging the benefits of a central file store would allow easier collaboration, and access to your files from any network-connected computer.
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+
+Automatically pulling changes would present problems if there were changes that you didn't not want to pull down to your computer. Also, how would you denote which branch(es) you would want to automatically update, and which one(s) you wouldn't?
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+Forks, clones, and branches are all similarly related, in that they allow for alternate sets of the repository. Forks essentially clone a repository on Github that you don't have permission to edit. You can then modify your forked repository, and even suggest the changes to the original owner(s). Cloning copies a repository that you do have access to edit. It's a way of pulling the repository to make a copy, which can be useful when you are working from a different computer, or if you have team members that are collaborating on the project. Branches allow you to deviate from the main line of development - the master - and include different versions, or more commonly, to test out experimental features.
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+The benefit of having a copy of the last known state of the remote stored locally is the ability to compare changes you've made to the local repository to the remote. This would be especially useful if the commits were not linear.
+
+How would you collaborate without using Git or Github? What would be easier, and what would be harder?
+
+Git - and by associate, Github - are designed as a versioning system, which makes tracking multiple versions much simpler. You can make changes, or even branch and merge the code without having to manually compare versions of the document to see which one is current. Even more difficult would be to compare two sets of changes to see which ones need kept and which ones would need added from each document. Git makes it much simpler to keep track of the versions of the project. Doing so manually would be very tedious, and, I imagine, error prone. That being said, manually collaborating would give you a better understanding of an overall project, especially if that project was small. A large project might be more difficult to make sense of without a system to track versions.
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+
+I think it makes sense to create a new branch when trying to add a new feature to the software. This would allow you to maintain the main program without having to remove changes for the new feature before fixing a bug. You can then merge the branch into master when you're ready to add the feature to the program.
